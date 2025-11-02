@@ -1,0 +1,37 @@
+# Node.js dependencies
+node_modules/
+
+# Build output
+out/
+lib/
+
+# Source files (if compiling to dist)
+src/
+
+# Test files
+test/
+__tests__/
+
+# Configuration files
+tsconfig.json
+.eslintrc.json
+webpack.config.js
+
+# Git files
+.git/
+.gitignore
+
+# GitHub files
+.github/
+
+# npm files
+package-lock.json
+yarn.lock
+
+# Ignore everything except what we actually need
+!dist/
+!README.md
+!LICENSE.txt
+!package.json
+!CHANGELOG.md
+!logo.png
