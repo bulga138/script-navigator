@@ -1,4 +1,4 @@
-# 🧭 Script Jumper
+# 🧭 Script Navigator
 
 Jump directly to your `package.json` scripts and their implementations. **Ctrl+click** (or `Cmd+click`) on `npm run lint` in your `Jenkinsfile` to go to its definition, then **Ctrl+click** `eslint .` to jump to the `eslint` binary\!
 
@@ -19,13 +19,13 @@ This extension supercharges your "Go to Definition" capabilities for Node.js pro
 ## 🛠️ Installation
 
 1.  Press `Ctrl+Shift+X` (or `Cmd+Shift+X`) to open the Extensions view.
-2.  Search for **"Script Jumper"**.
+2.  Search for **"Script Navigator"**.
 3.  Click **Install**.
 
 Alternatively, via CLI (once published):
 
 ```bash
-code --install-extension bulga.script-jumper
+code --install-extension bulga.script-navigator
 ```
 
 ## 🖱️ Usage
@@ -70,7 +70,7 @@ In your `package.json`, find a script or binary definition.
 
 This extension contributes the following command to the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`):
 
-  - `Script Jumper: Re-index Workspace`: Manually rescans the entire workspace for all `package.json` files.
+  - `Script Navigator: Re-index Workspace`: Manually rescans the entire workspace for all `package.json` files.
 
 ## 📦 Requirements
 
@@ -81,15 +81,15 @@ This extension contributes the following command to the Command Palette (`Ctrl+S
 
 ### Nothing happens when I click
 
-  - Try running the `Script Jumper: Re-index Workspace` command from the Command Palette.
+  - Try running the `Script Navigator: Re-index Workspace` command from the Command Palette.
   - Ensure the `package.json` containing the script is not inside a `node_modules` folder (which are ignored by the indexer).
-  - Check the `Script Jumper` output channel for any errors.
+  - Check the `Script Navigator` output channel for any errors.
 
 ## 🏷️ Release Notes
 
 **0.1.0**
 
-  - Initial release of Script Jumper.
+  - Initial release of Script Navigator.
   - Support for `package.json` `scripts` and `bin` navigation.
   - Support for jumping from `Jenkinsfile`, `.js`, `.ts`, and other files.
   - Advanced binary and path resolution.

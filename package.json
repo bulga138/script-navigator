@@ -2,8 +2,10 @@
   "name": "script-navigator",
   "displayName": "Script Navigator",
   "description": "Jump to npm/yarn/pnpm scripts and binaries in monorepos, with caching and jsonc parsing.",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "publisher": "bulga",
+  "license": "ISC",
+  "icon": "logo.png",
   "engines": { "vscode": "^1.90.0" },
   "categories": ["Other"],
   "activationEvents": [
@@ -18,18 +20,19 @@
       }
     ]
   },
+  "repository": {
+    "url": "https://github.com/bulga138/script-navigator"
+  },
   "scripts": {
-    "compile": "tsc -p .",
-    "watch": "tsc -watch -p .",
-    "lint": "eslint src --ext .ts",
-    "test": "npm run compile && node ./out/test/runTest.js"
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
   },
   "devDependencies": {
     "typescript": "^5.3.3",
     "@types/node": "^20.10.0",
     "@types/vscode": "^1.90.0",
-    "vscode-test": "^2.3.3",
-    "eslint": "^8.55.0",
     "jsonc-parser": "^3.2.0"
   }
 }
