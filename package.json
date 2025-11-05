@@ -2,14 +2,18 @@
   "name": "script-navigator",
   "displayName": "Script Navigator",
   "description": "Jump to npm/yarn/pnpm scripts and binaries in monorepos, with caching and jsonc parsing.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "bulga",
   "license": "ISC",
   "icon": "logo.png",
-  "engines": { "vscode": "^1.90.0" },
-  "categories": ["Other"],
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
   "activationEvents": [
-    "onStartupFinished"    
+    "onStartupFinished"
   ],
   "main": "./dist/extension.js",
   "contributes": {
